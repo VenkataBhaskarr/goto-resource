@@ -1,0 +1,10 @@
+.bot{
+    color : white;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.bot:hover{
+    color : rgb(197, 197, 197);
+    
+}
