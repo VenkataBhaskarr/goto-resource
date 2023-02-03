@@ -1,6 +1,8 @@
 import axios from "axios"
 import MediaCard from "./MediaCard"
+import Contribute from "./Contribute"
 import { useState, useEffect } from "react";
+import "../static/about.css";
 export default function About(){
     const [data, setData] = useState(null);
      useEffect(() => {
@@ -9,10 +11,10 @@ export default function About(){
         .then((res) => {
           setData(res.data)
         }).catch(err => console.log(err)) 
-     },[]);
+     },);
    if(data){
     return(
-        <div>
+        <div className="grid-box">
            {
                data.map((element)=><MediaCard name={element.name} age={element.age}/>)
            }

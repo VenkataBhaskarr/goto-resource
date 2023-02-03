@@ -18,7 +18,7 @@ export default function Contribute(){
     return(
         <div>
              <div class="main-block">
-                 <h1>Resource?</h1>
+                 <h1>Got A Resource?</h1>
                  <form>
                  <hr></hr>
                  <div class="account-type">
@@ -39,7 +39,7 @@ export default function Contribute(){
         <br></br>
         <br></br>
         <div class="btn-block">
-          <p>Please make sure the above added resource is reliable and you personally followed it</p>
+          <p>Please make sure the above added resource is reliable and you personally followed and benefitted from it</p>
           <button onClick={sendData} type="submit">Submit</button>
         </div>
       </form>

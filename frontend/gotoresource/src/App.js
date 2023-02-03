@@ -4,6 +4,7 @@ import Contribute from './components/Contribute';
 import About from './components/About';
 import {Route,Routes} from "react-router-dom"
 import Home from "./components/Home"
+import EndCredits from "./components/EndCredits"
 
 function App() {
   return (
@@ -16,13 +17,6 @@ function App() {
          <Route exact path = "/About.js" element={<About />}> </Route>
          <Route exact path = "/Contribute.js" element={<Contribute />}> </Route>
        </Routes>
-
-         {/* <Navbar />
-
-         <Routes> 
-              <Route path="/Contribute.js" element={<Contribute />}></Route>
-              {/* <Route path="https://youtube.com" element={<About />}></Route> */}
-         {/* </Routes> */} 
     </div>
   );
 }
