@@ -12,8 +12,8 @@ export default function MediaCard(props) {
       <CardMedia
        component="img"
        alt="green iguana"
-       height="140"
-       image="/images/contemplative-reptile.jpg"
+       height="180"
+       image="./contemplative-reptile.jpg"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
