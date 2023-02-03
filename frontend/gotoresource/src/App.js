@@ -9,6 +9,8 @@ function App() {
   return (
     <div className="App">
        <ResponsiveAppBar />
+       <br></br>
+       <br></br>
        <Routes>
          <Route exact path="/" element = {<Home />}> </Route>
          <Route exact path = "/About.js" element={<About />}> </Route>
