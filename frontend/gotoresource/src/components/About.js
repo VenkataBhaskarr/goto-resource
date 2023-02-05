@@ -1,6 +1,7 @@
 import axios from "axios"
 import MediaCard from "./MediaCard"
 import Contribute from "./Contribute"
+import { Grid } from '@mui/material';
 import { useState, useEffect } from "react";
 import "../static/about.css";
 export default function About(){
@@ -14,11 +15,19 @@ export default function About(){
      },);
    if(data){
     return(
-        <div className="grid-box">
-           {
-               data.map((element)=><MediaCard name={element.name} age={element.age}/>)
-           }
-        </div>
+        // <div className="grid-box">
+        //    {
+        //        data.map((element)=><MediaCard name={element.name} age={element.age}/>)
+        //    }
+        // </div>
+
+          <Grid className ="grid" container spacing={5}>
+              {data.map((element) => (
+               <Grid item xs={12} sm={4} md={4}>
+                  <MediaCard name={element.name} age={element.age}/>
+               </Grid>
+             ))}
+         </Grid>
     )
    }
    else{
