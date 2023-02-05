@@ -3,42 +3,43 @@ import "../static/form.css"
 import {useState} from "react"
 export default function Contribute(){
     const [name , setName] = useState('')
-    const [mail , setMail] = useState('')
+    const [link , setLink] = useState('')
     const [password , setPassword] = useState('')
     function sendData(e){
          e.preventDefault(); 
          axios.post("http://localhost:5000/data" , {
             name : name,
-            mail : mail
+            link : link
          }).then(res => console.log(res)).catch(err => console.log(err))
          setName('');
-         setMail('');
+         setLink('');
          setPassword('');
     }
     return(
         <div>
-             <div class="main-block">
+             <div className="main-block">
                  <h1>Got A Resource?</h1>
                  <form>
                  <hr></hr>
-                 <div class="account-type">
+                 <div className="account-type">
          <input type="radio" value="none" id="radioOne" name="account" checked/>
-          <label for="radioOne" class="radio">Videos</label>
+          <label for="radioOne" className="radio">Videos</label>
           <input type="radio" value="none" id="radioTwo" name="account" />
-          <label for="radioTwo" class="radio">Documentations</label>
+          <label for="radioTwo" className="radio">Documentations</label>
                 </div>
                 <hr></hr>
-        <label id="icon" for="name"><i class="fas fa-envelope"></i></label>
-        <input type="text" value={mail} onChange={(e) => setMail(e.target.value)} placeholder="Email" required/>
-        <label id="icon" for="name"><i class="fas fa-user"></i></label>
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required/>
-        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required/>
+        <label id="icon" for="name"><i className="fas fa-envelope"></i></label>
+        <input type="text" value={link} onChange={(e) => setLink(e.target.value)} placeholder="Provide the Resource Link" required/>
+        <label id="icon" for="name"><i className="fas fa-user"></i></label>
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Provide the Resource Name" required/>
+        <label id="icon" for="name"><i className="fas fa-unlock-alt"></i></label>
+        <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} placeholder=" Type Technical or NonTechnical" required/>
+        <br></br>
         <br></br>
         <hr></hr>
+        <hr></hr>
         <br></br>
-        <br></br>
-        <div class="btn-block">
+        <div className="btn-block">
           <p>Please make sure the above added resource is reliable and you personally followed and benefitted from it</p>
           <button onClick={sendData} type="submit">Submit</button>
         </div>
