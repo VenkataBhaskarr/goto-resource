@@ -1,0 +1,27 @@
+ .title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #0070f3;
+    text-shadow: 1px 1px #0070f3;
+    text-transform: lowercase;
+    /* box-shadow: 2px 2px 10px #0070f3; */
+  }
+
+  
+  .contenty {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    
+    width: 40vw;
+    /* margin-bottom: 50px; */
+    /* display: inline-block; */
+  }
+
+  .cotext{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  } 

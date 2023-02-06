@@ -16,8 +16,8 @@ export default function Contribute(){
          setPassword('');
     }
     return(
-        <div>
-             <div className="main-block">
+        <div className = "content">
+             {/* <div className="main-block">
                  <h1>Got A Resource?</h1>
                  <form>
                  <hr></hr>
@@ -44,49 +44,33 @@ export default function Contribute(){
           <button onClick={sendData} type="submit">Submit</button>
         </div>
       </form>
+    </div> */}
+
+
+      <div className="login-box">
+            <h2>Submit a resource</h2>
+            <form onSubmit={sendData} type="submit">
+        <div className="user-box">
+      <input type="text" name="" required="" value={name} onChange={(e) => setName(e.target.value)}></input>
+      <label>Resource name</label>
     </div>
+    <div className="user-box">
+      <input type="text" name="" required="" value={link} onChange={(e) => setLink(e.target.value)}></input>
+      <label>Link to the resource</label>
+    </div>
+     <button id="a">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+     </button>
+   </form>
+   </div>
+
+
+
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           /* <form className="form">
-               
-             
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)}></input>
-                
-                 
-                   <input type="number" value={age} onChange={(e) => setAge(e.target.value)}></input>
-               
-               
-                   <button onClick={sendData}> Submit </button>
-
-           </form> */
     )
 }

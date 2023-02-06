@@ -2,3 +2,8 @@
     text-decoration: none;
     color: #1c87c9;
 }
+.right{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
