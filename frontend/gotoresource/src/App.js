@@ -14,8 +14,9 @@ function App() {
        <br></br>
        <Routes>
          <Route exact path="/" element = {<Home />}> </Route>
-         <Route exact path = "/About.js" element={<About />}> </Route>
          <Route exact path = "/Contribute.js" element={<Contribute />}> </Route>
+         <Route exact path = "/About.js" element={<About />}> </Route>
+         
        </Routes>
     </div>
   );

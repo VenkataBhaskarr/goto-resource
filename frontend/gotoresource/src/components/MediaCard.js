@@ -14,17 +14,17 @@ export default function MediaCard(props) {
        component="img"
        alt="green iguana"
        height="180"
-       image="./contemplative-reptile.jpg"
+       image="./work.jpg"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {props.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {props.age}
+           Technical
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions className = "right">
         <Button size="small">Share</Button>
         <Button size="small"><a className = "links" target="_blank" href={props.link}> Learn more </a></Button>
       </CardActions>
