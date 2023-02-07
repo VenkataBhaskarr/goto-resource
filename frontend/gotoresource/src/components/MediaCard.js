@@ -9,7 +9,7 @@ import "../static/media.css"
 
 export default function MediaCard(props) {
   return (
-    <Card sx={{ maxWidth: 345}}>
+    <Card sx={{ maxWidth: 345}} >
       <CardMedia
        component="img"
        alt="green iguana"

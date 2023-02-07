@@ -23,7 +23,7 @@ export default function About(){
 
           <Grid className ="grid" container spacing={5}>
               {data.map((element) => (
-               <Grid item xs={12} sm={4} md={4}>
+               <Grid item xs={12} sm={4} md={4} >
                   <MediaCard name={element.name} age={element.age} link={element.link}/>
                </Grid>
              ))}
